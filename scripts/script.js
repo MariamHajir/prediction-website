@@ -50,6 +50,7 @@ async function getNationality(name){
     country_codes=country.country;
     print();
 }
+
 // getresults 
 
 function print(){
