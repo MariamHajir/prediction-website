@@ -1,0 +1,92 @@
+/* body starts here */
+body {
+    height: 100vh;
+    background-color: rgb(136, 51, 136);
+    background: linear-gradient(to bottom right, rgb(89, 7, 89), rgb(200, 63, 177)); /*multi-plate*/
+    background-size: 150% 169%;
+}
+.title {
+    font-size: 50px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    color: rgb(216, 119, 195);
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.9), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+.container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.image {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.3);
+}
+.submit {
+    background-color: rgb(141, 4, 146);
+    font-size: 1em;
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    margin-top: 10px;
+}
+.submit:hover {
+    background-color: rgba(183, 79, 178, 0.767);
+    cursor: pointer;
+}
+label {
+    color: white;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 1.5em;
+}
+.name-input {
+    background-color: rgb(216, 119, 195);
+    height: 20px;
+    padding-top: 5px;
+    border-radius: 5px;
+}
+.result {
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin-top: 5px;
+    background-color: rgb(216, 119, 195);
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    padding: 15px 3px 0 3px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+/* body ends here */
+
+/* Media Queries starts here */
+
+@media only screen and (max-width: 640px) {
+    
+    .title {
+        font-size: 2em;
+    }
+    .container {
+        margin-top: 0px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .name-field {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .image {
+        width: 255px;
+        height: 255px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .result {
+        width: 255px;
+    }
+}
